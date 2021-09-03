@@ -4,7 +4,7 @@
 
 - This is a C source lib for calculating crc16.
 
-- It provides popular crc16 calc ways,  see follow chart,
+- It provides several crc16 calc ways, like,
 
   | X25  | CCITT  | CCITT_FALSE | MODBUS |
   | :--: | :----: | :---------: | :----: |
