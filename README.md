@@ -46,7 +46,7 @@
    	
    	/* Print result */
    	printf("%s crc16= 0x%04x\n",testbuf, crc16);
-   		C
+   		
    	return 0;
    }
    ```
