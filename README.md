@@ -55,7 +55,7 @@
 
 - Thanks for your attention.
 
-![](.\appendix.gif)
+![](images/appendix.gif)
 
 ---
 
