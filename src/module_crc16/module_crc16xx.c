@@ -165,42 +165,42 @@ width_t module_crc16_calc(MODULE_CRC16_MODE_e mode,
     #if CRC16_X25_ENABLE      
         case MODULE_CRC16_MODE_X25:
             return crc16_calc(&_x25_cfg, _x25_table, ptr, size);
-            break;
+            //break;
     #endif 
     #if CRC16_CCITT_ENABLE         
-		case MODULE_CRC16_MODE_CCITT:
+	case MODULE_CRC16_MODE_CCITT:
             return crc16_calc(&_ccitt_cfg, _ccitt_table, ptr, size);
-            break;
+            //break;
     #endif
     #if CRC16_CCITT_FLASE_ENABLE       
-		case MODULE_CRC16_MODE_CCITT_FLASE:
+	case MODULE_CRC16_MODE_CCITT_FLASE:
             return crc16_calc(&_ccitt_false_cfg, _ccitt_false_table, ptr, size);
-            break;    
+            //break;    
     #endif 
     #if CRC16_MODBUS_ENABLE         
         case MODULE_CRC16_MODE_MODBUS:
             return crc16_calc(&_modbus_cfg, _modbus_table, ptr, size);
-            break;  
+            //break;  
     #endif 
     #if CRC16_USB_ENABLE              
         case MODULE_CRC16_MODE_USB:
             return crc16_calc(&_usb_cfg, _usb_table, ptr, size);
-            break;
+            //break;
     #endif 
     #if CRC16_XMODEM_ENABLE            
         case MODULE_CRC16_MODE_XMODEM:
             return crc16_calc(&_xmodem_cfg, _xmodem_table, ptr, size);
-            break;
+            //break;
     #endif
     #if CRC16_IBM_ENABLE            
         case MODULE_CRC16_MODE_IBM:
             return crc16_calc(&_ibm_cfg, _ibm_table, ptr, size);
-            break; 
+            //break; 
     #endif 
     #if CRC16_MAXIM_ENABLE           
         case MODULE_CRC16_MODE_MAXIM:
             return crc16_calc(&_maxim_cfg, _maxim_table, ptr, size);
-            break; 
+            //break; 
     #endif                                  
     }
     return 0xFFFF;
